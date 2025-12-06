@@ -1,19 +1,102 @@
+/* Basic reset & typography */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+:root {
+  --bg: #ffd6ea;        /* light pink background */
+  --card-bg: #ffffff;
+  --accent: #6a0dad;    /* purple accent */
+  --muted: #666;
+  --max-width: 1000px;
+  --gap: 18px;
+}
+
+/* Page background and container */
 body {
-    background: pink;
-    font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: #222;
 }
-h1 {
-    color: purple;
-    text-align: center;
+.container {
+  max-width: var(--max-width);
+  margin: 32px auto;
+  padding: 24px;
 }
-.projects {
-    display:flex;
-    flex-wrap:wrap;
+
+/* Header */
+.site-header h1 {
+  color: var(--accent);
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
 }
+.header-meta {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+/* Section headings */
+section h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #222;
+  border-left: 4px solid rgba(106,13,173,0.18);
+  padding-left: 10px;
+}
+
+/* About & general spacing */
+.about, .skills, .projects, .contact {
+  background: transparent;
+  margin-bottom: var(--gap);
+  padding-bottom: 6px;
+}
+
+/* Small muted text */
+.small-muted { color: var(--muted); font-size: 0.95rem; }
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+/* Project card */
 .project {
-    width: 30%;
-    margin: 10px;
-    padding: 20px 10px;
-    background: white;
-    border-radius: 25%;
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 170px;
+}
+
+/* Image styles */
+.project img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Titles and text inside card */
+.project h3 { margin: 0; font-size: 1rem; }
+.project p { margin: 0; color: #333; line-height: 1.4; font-size: .95rem; }
+
+/* Links */
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Footer */
+.footer-attrib { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 18px; }
+
+/* Responsive tweaks */
+@media (max-width: 520px) {
+  .container { padding: 16px; margin: 12px; }
+  .project img { height: 110px; }
 }
