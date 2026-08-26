@@ -1,0 +1,34 @@
+body {
+    background-color: #f5eee6;
+    color: #3d2c2e;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#content {
+    background-color: #fffaf5;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #7a3446;
+}
+
+h2 {
+    color: #a65d6d;
+}
+
+p {
+    color: #5b4548;
+}
+
+main a {
+    color: #8b4d5d;
+    text-decoration: none;
+}
+
+header a {
+    color: #7a3446;
+    text-decoration: none;
+}
