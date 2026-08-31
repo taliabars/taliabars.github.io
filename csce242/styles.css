@@ -11,16 +11,30 @@ body {
     padding: 20px;
 }
 
+header {
+    text-align: center;
+}
+
 h1 {
     color: #7a3446;
 }
 
 h2 {
     color: #a65d6d;
+    text-align: center;
+}
+
+h3 {
+    color: #7a3446;
 }
 
 p {
     color: #5b4548;
+}
+
+header a {
+    color: #7a3446;
+    text-decoration: none;
 }
 
 main a {
@@ -28,7 +42,30 @@ main a {
     text-decoration: none;
 }
 
-header a {
-    color: #7a3446;
-    text-decoration: none;
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.assignment {
+    background-color: #f5eee6;
+    padding: 15px;
+    flex: 1;
+}
+
+.assignment img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
 }
