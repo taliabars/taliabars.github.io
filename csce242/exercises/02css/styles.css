@@ -13,6 +13,14 @@ body {
     box-shadow: 5px 5px yellow;
 }
 
+header, main, footer {
+    padding:5px;
+}
+
+header, footer {
+    background: green;
+    color: white;
+}
 
 /* Navigation */
 
