@@ -32,13 +32,13 @@ p {
     color: #5b4548;
 }
 
-main a {
-    color: #8b4d5d;
+header a {
+    color: #7a3446;
     text-decoration: none;
 }
 
-header a {
-    color: #7a3446;
+main a {
+    color: #8b4d5d;
     text-decoration: none;
 }
 
