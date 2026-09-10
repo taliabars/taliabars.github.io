@@ -32,25 +32,26 @@ p {
     color: #5b4548;
 }
 
-header a {
-    color: #7a3446;
-    text-decoration: none;
-}
-
 main a {
     color: #8b4d5d;
     text-decoration: none;
 }
 
+header a {
+    color: #7a3446;
+    text-decoration: none;
+}
+
 .columns {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .assignment {
     background-color: #f5eee6;
     padding: 15px;
-    flex: 1;
+    flex: 1 1 25%;
 }
 
 .assignment img {
