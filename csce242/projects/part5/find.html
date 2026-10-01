@@ -34,60 +34,112 @@
                 <section class="question">
                     <h3>1. What genre are you in the mood for?</h3>
 
-                    <div class="options">
-                        <div class="option">Romance</div>
-                        <div class="option">Mystery / Thriller</div>
-                        <div class="option">Fantasy</div>
-                        <div class="option">Surprise Me</div>
+                    <div class="options" id="genre-options">
+                        <button class="option" data-value="romance">
+                            Romance
+                        </button>
+
+                        <button class="option" data-value="mystery">
+                            Mystery / Thriller
+                        </button>
+
+                        <button class="option" data-value="fantasy">
+                            Fantasy
+                        </button>
+
+                        <button class="option" data-value="surprise">
+                            Surprise Me
+                        </button>
                     </div>
                 </section>
 
                 <section class="question">
                     <h3>2. How do you want the book to make you feel?</h3>
 
-                    <div class="options">
-                        <div class="option">Happy</div>
-                        <div class="option">Emotional</div>
-                        <div class="option">On Edge</div>
-                        <div class="option">Comforted</div>
+                    <div class="options" id="mood-options">
+                        <button class="option" data-value="happy">
+                            Happy
+                        </button>
+
+                        <button class="option" data-value="emotional">
+                            Emotional
+                        </button>
+
+                        <button class="option" data-value="edge">
+                            On Edge
+                        </button>
+
+                        <button class="option" data-value="comforted">
+                            Comforted
+                        </button>
                     </div>
                 </section>
 
                 <section class="question">
                     <h3>3. What kind of pace are you looking for?</h3>
 
-                    <div class="options">
-                        <div class="option">Slow Burn</div>
-                        <div class="option">Steady</div>
-                        <div class="option">Fast-Paced</div>
-                        <div class="option">No Preference</div>
+                    <div class="options" id="pace-options">
+                        <button class="option" data-value="slow">
+                            Slow Burn
+                        </button>
+
+                        <button class="option" data-value="steady">
+                            Steady
+                        </button>
+
+                        <button class="option" data-value="fast">
+                            Fast-Paced
+                        </button>
+
+                        <button class="option" data-value="any">
+                            No Preference
+                        </button>
                     </div>
                 </section>
 
                 <section class="question">
                     <h3>4. How long of a book do you want?</h3>
 
-                    <div class="options">
-                        <div class="option">Under 300 Pages</div>
-                        <div class="option">300-400 Pages</div>
-                        <div class="option">400+ Pages</div>
-                        <div class="option">No Preference</div>
+                    <div class="options" id="length-options">
+                        <button class="option" data-value="short">
+                            Under 300 Pages
+                        </button>
+
+                        <button class="option" data-value="medium">
+                            300-400 Pages
+                        </button>
+
+                        <button class="option" data-value="long">
+                            400+ Pages
+                        </button>
+
+                        <button class="option" data-value="any">
+                            No Preference
+                        </button>
                     </div>
                 </section>
 
                 <div class="quiz-button">
-                    <a class="button" href="#">Find My Book →</a>
+                    <button id="find-book-button">
+                        Find My Book →
+                    </button>
                 </div>
+
+                <div id="recommendation"></div>
             </section>
 
             <section class="how-it-works">
                 <h2>How It Works</h2>
-                <p>Finding your next read is as easy as 1, 2, 3.</p>
+
+                <p>
+                    Finding your next read is as easy as 1, 2, 3.
+                </p>
 
                 <div class="columns">
                     <section class="step">
                         <h2>01</h2>
                         <h3>Tell Us Your Mood</h3>
+
                         <p>
                             Choose the genre, feeling, pace, and length
                             you're looking for.
@@ -97,6 +149,7 @@
                     <section class="step">
                         <h2>02</h2>
                         <h3>Get Your Match</h3>
+
                         <p>
                             We'll use your choices to narrow down books
                             that fit what you want.
@@ -106,6 +159,7 @@
                     <section class="step">
                         <h2>03</h2>
                         <h3>Start Reading</h3>
+
                         <p>
                             Explore your recommendation and find your
                             next favorite book.

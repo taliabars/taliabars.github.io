@@ -121,10 +121,16 @@ h3 {
 .book img {
     width: 100%;
     max-width: 200px;
+    border-radius: 10px;
 }
 
 .book h3 {
     color: var(--burgundy);
+}
+
+.book h3 a {
+    color: var(--burgundy);
+    text-decoration: none;
 }
 
 .book p {
@@ -220,6 +226,11 @@ h3 {
     overflow: hidden;
 }
 
+.reading-list a {
+    color: var(--burgundy);
+    text-decoration: none;
+}
+
 .reading-list img {
     width: 100%;
     height: 250px;
@@ -229,21 +240,6 @@ h3 {
 .reading-list h3 {
     color: var(--burgundy);
     padding: 10px 20px;
-}
-
-#about {
-    text-align: center;
-    padding: 80px 20%;
-}
-
-#about h2 {
-    color: var(--burgundy);
-    font-size: 36px;
-}
-
-#about p {
-    line-height: 1.7;
-    margin-bottom: 30px;
 }
 
 /* Other Pages */
@@ -302,6 +298,7 @@ h3 {
 .book-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -311,12 +308,14 @@ h3 {
     text-align: center;
     padding: 20px 10px;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
 .book-card img {
     width: 150px;
     height: 225px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .book-card h3 {
@@ -351,14 +350,56 @@ h3 {
 
 .option {
     background: var(--cream);
+    color: var(--dark);
+    border: 2px solid transparent;
     padding: 20px;
     width: 22%;
     text-align: center;
     border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.option.selected {
+    background: var(--burgundy);
+    color: var(--cream);
+    border-color: var(--burgundy);
 }
 
 .quiz-button {
     text-align: center;
+}
+
+#find-book-button {
+    background: var(--burgundy);
+    color: var(--cream);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#recommendation {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#recommendation h2 {
+    color: var(--burgundy);
+    font-size: 32px;
+}
+
+#recommendation img {
+    width: 180px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#recommendation h3 {
+    color: var(--burgundy);
+    font-size: 22px;
 }
 
 .how-it-works {
@@ -403,15 +444,21 @@ h3 {
     width: 40%;
 }
 
-.featured-list img {
+.featured-image-link {
     width: 48%;
+}
+
+.featured-image-link img {
+    width: 100%;
     height: 330px;
     object-fit: cover;
     border-radius: 14px;
+    display: block;
 }
 
 .more-lists {
     margin-top: 70px;
+    text-align: center;
 }
 
 .more-lists h2 {
@@ -422,6 +469,7 @@ h3 {
 .list-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -430,6 +478,7 @@ h3 {
     width: 30%;
     border-radius: 14px;
     overflow: hidden;
+    text-align: center;
 }
 
 .list-card img {
@@ -566,6 +615,7 @@ h3 {
 .detail-cover img {
     width: 260px;
     max-width: 100%;
+    border-radius: 12px;
 }
 
 .detail-info {
@@ -624,10 +674,40 @@ h3 {
     width: 160px;
     height: 240px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .similar-book h3 {
     color: var(--burgundy);
+}
+
+/* Reading List Details Page */
+
+.list-detail-heading {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.list-detail-heading .page-subtitle {
+    margin-bottom: 30px;
+}
+
+.list-detail-heading img {
+    width: 700px;
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.list-detail-books {
+    margin-top: 70px;
+}
+
+.list-detail-books > h2 {
+    color: var(--burgundy);
+    font-size: 36px;
+    text-align: center;
 }
 
 /* Footer */
@@ -665,14 +745,22 @@ footer p {
 
     #menu-button {
         display: block;
+        width: 100%;
+        text-align: center;
     }
 
     #main-nav {
         float: none;
+        width: 100%;
+        text-align: center;
     }
 
     #main-nav.hide-small {
         display: none;
+    }
+
+    #main-nav ul {
+        padding: 0;
     }
 
     #main-nav li {
@@ -743,7 +831,7 @@ footer p {
     }
 
     .book-card {
-        width: auto;
+        width: 100%;
         margin-bottom: 25px;
     }
 
@@ -752,8 +840,9 @@ footer p {
     }
 
     .option {
-        width: auto;
+        width: 100%;
         margin-bottom: 10px;
+        box-sizing: border-box;
     }
 
     .step {
@@ -769,9 +858,15 @@ footer p {
         width: 100%;
     }
 
-    .featured-list img {
+    .featured-image-link {
+        display: block;
         width: 100%;
         margin-top: 30px;
+    }
+
+    .featured-image-link img {
+        width: 100%;
+        height: auto;
     }
 
     .list-grid {
@@ -825,6 +920,11 @@ footer p {
     .similar-book {
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    .list-detail-heading img {
+        width: 100%;
+        height: auto;
     }
 
     footer nav {
