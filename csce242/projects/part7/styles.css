@@ -53,7 +53,6 @@ nav a {
 }
 
 h2,
-
 h3 {
     font-family: Georgia, serif;
 }
@@ -68,7 +67,6 @@ h3 {
 }
 
 /* Home Page */
-
 #hero {
     padding: 70px 8%;
     display: flex;
@@ -244,7 +242,6 @@ h3 {
 }
 
 /* Other Pages */
-
 .page-content {
     padding: 70px 8%;
 }
@@ -262,7 +259,6 @@ h3 {
 }
 
 /* Browse Books */
-
 .search-area {
     margin-bottom: 35px;
 }
@@ -328,7 +324,6 @@ h3 {
 }
 
 /* Find Your Next Read */
-
 .quiz {
     background: var(--pink);
     padding: 50px;
@@ -431,7 +426,6 @@ h3 {
 }
 
 /* Reading Lists Page */
-
 .featured-list {
     background: var(--pink);
     padding: 40px;
@@ -489,7 +483,6 @@ h3 {
 }
 
 .list-card h3,
-
 .list-card p {
     padding-left: 20px;
     padding-right: 20px;
@@ -504,7 +497,6 @@ h3 {
 }
 
 /* About Page */
-
 .about-top {
     display: flex;
     justify-content: space-between;
@@ -596,7 +588,6 @@ h3 {
 }
 
 /* Book Details Page */
-
 .back-link {
     color: var(--burgundy);
     text-decoration: none;
@@ -648,16 +639,13 @@ h3 {
 }
 
 .book-description h2,
-
 .book-review h2,
-
 .similar-books h2 {
     color: var(--burgundy);
     font-size: 32px;
 }
 
 .book-description p,
-
 .book-review p {
     line-height: 1.7;
 }
@@ -687,7 +675,6 @@ h3 {
 }
 
 /* Reading List Details Page */
-
 .list-detail-heading {
     text-align: center;
     margin-top: 40px;
@@ -716,7 +703,6 @@ h3 {
 }
 
 /* Contact Form */
-
 .contact-section {
     background: var(--pink);
     border-radius: 18px;
@@ -798,8 +784,39 @@ h3 {
     color: #9b2536;
 }
 
-/* Footer */
+/* YouTube Video */
 
+.video-section {
+    text-align: center;
+    padding: 60px 0 80px;
+}
+
+.video-section h2 {
+    color: var(--burgundy);
+    font-size: 36px;
+}
+
+.video-section p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Footer */
 footer {
     background: var(--burgundy);
     color: var(--cream);
@@ -821,8 +838,11 @@ footer p {
 }
 
 /* Small Screens */
-
 @media only screen and (max-width: 768px) {
+    .video-section h2 {
+        font-size: 30px;
+    }
+
     .contact-section {
         padding: 25px 18px;
     }
@@ -891,7 +911,6 @@ footer p {
     }
 
     .book,
-
     .reading-list {
         width: 100%;
         margin-bottom: 30px;
@@ -1007,7 +1026,6 @@ footer p {
     }
 
     .detail-cover,
-
     .detail-info {
         width: 100%;
     }
@@ -1038,4 +1056,5 @@ footer p {
         display: block;
         margin: 10px 0;
     }
+
 }
