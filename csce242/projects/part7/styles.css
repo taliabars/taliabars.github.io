@@ -53,6 +53,7 @@ nav a {
 }
 
 h2,
+
 h3 {
     font-family: Georgia, serif;
 }
@@ -488,6 +489,7 @@ h3 {
 }
 
 .list-card h3,
+
 .list-card p {
     padding-left: 20px;
     padding-right: 20px;
@@ -646,13 +648,16 @@ h3 {
 }
 
 .book-description h2,
+
 .book-review h2,
+
 .similar-books h2 {
     color: var(--burgundy);
     font-size: 32px;
 }
 
 .book-description p,
+
 .book-review p {
     line-height: 1.7;
 }
@@ -710,6 +715,89 @@ h3 {
     text-align: center;
 }
 
+/* Contact Form */
+
+.contact-section {
+    background: var(--pink);
+    border-radius: 18px;
+    padding: 50px;
+    max-width: 760px;
+    margin: 20px auto 70px;
+    box-sizing: border-box;
+}
+
+.contact-section h2 {
+    color: var(--burgundy);
+    font-size: 36px;
+    text-align: center;
+}
+
+.contact-section > p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+#contact-form label {
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--dark);
+    font: inherit;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: 2px solid var(--rose);
+    outline-offset: 1px;
+}
+
+#contact-form button {
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+#contact-form button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+#contact-status {
+    min-height: 1.5em;
+    margin: 4px 0 0;
+    line-height: 1.5;
+}
+
+#contact-status.success {
+    color: #245c36;
+}
+
+#contact-status.error {
+    color: #9b2536;
+}
+
 /* Footer */
 
 footer {
@@ -735,6 +823,19 @@ footer p {
 /* Small Screens */
 
 @media only screen and (max-width: 768px) {
+    .contact-section {
+        padding: 25px 18px;
+    }
+
+    .contact-section h2 {
+        font-size: 30px;
+    }
+
+    #contact-form button {
+        width: 100%;
+        text-align: center;
+    }
+
     header {
         text-align: center;
     }
@@ -790,6 +891,7 @@ footer p {
     }
 
     .book,
+
     .reading-list {
         width: 100%;
         margin-bottom: 30px;
@@ -905,6 +1007,7 @@ footer p {
     }
 
     .detail-cover,
+
     .detail-info {
         width: 100%;
     }
